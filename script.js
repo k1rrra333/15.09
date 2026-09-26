@@ -186,63 +186,90 @@
 
 
 
-let players = ["Aram", "Hayk", "Mariam", "Saro", "Ashot", "Ani"];
-let scores = [120, 45, 200, 75, 160, 30];
+// let players = ["Aram", "Hayk", "Mariam", "Saro", "Ashot", "Ani"];
+// let scores = [120, 45, 200, 75, 160, 30];
 
 
-let winners = [];
-let losers = [];
-let bonusPlayers = [];
+// let winners = [];
+// let losers = [];
+// let bonusPlayers = [];
 
 
-for (i = 0; i < players.length; i++) {
+// for (i = 0; i < players.length; i++) {
 
-    if (scores[i] >= 100) {
-        winners.push(players[i]);
-    }
+//     if (scores[i] >= 100) {
+//         winners.push(players[i]);
+//     }
 
-    if (scores[i] < 50) {
-        losers.push(players[i]);
-    }
+//     if (scores[i] < 50) {
+//         losers.push(players[i]);
+//     }
 
-    if (scores[i] >= 100 && scores[i] <= 150) {
-        bonusPlayers.push(players[i]);
-    }
+//     if (scores[i] >= 100 && scores[i] <= 150) {
+//         bonusPlayers.push(players[i]);
+//     }
 
-}
+// }
 
-console.log(winners)
-console.log(losers)
-console.log(bonusPlayers)
+// console.log(winners)
+// console.log(losers)
+// console.log(bonusPlayers)
+
+
+// // ==============================
+
+
+
+// let items = ["Sword", "Shield", "Potion", "Bow", "Magic Stone", "Helmet"];
+// let prices = [150, 100, 30, 120, 300, 80];
+
+// let expensiveItems = [];
+// let cheapItems = [];
+// let specialItems = [];
+
+// for (let i = 0; i < items.length; i++) {
+
+//     if (prices[i] > 100) {
+//         expensiveItems.push(items[i]);
+//     }
+
+//     if (prices[i] <= 50) {
+//         cheapItems.push(items[i]);
+//     }
+
+//     if (prices[i] > 100 && prices[i] < 250) {
+//         specialItems.push(items[i]);
+//     }
+
+// }
+
+// console.log(expensiveItems);
+// console.log(cheapItems);
+// let esim = []
+
+// for (let index = 0; index < array.length; index++) {
+//     const element = array[index];
+
+// }
+
+
 
 
 // ==============================
 
 
+let answer = +prompt(`guess number`)
 
-let items = ["Sword", "Shield", "Potion", "Bow", "Magic Stone", "Helmet"];
-let prices = [150, 100, 30, 120, 300, 80];
+let guessedNum = Math.floor(Math.random() * 21)
 
-let expensiveItems = [];
-let cheapItems = [];
-let specialItems = [];
+console.log(guessedNum)
 
-for (let i = 0; i < items.length; i++) {
-
-    if (prices[i] > 100) {
-        expensiveItems.push(items[i]);
-    }
-
-    if (prices[i] <= 50) {
-        cheapItems.push(items[i]);
-    }
-
-    if (prices[i] > 100 && prices[i] < 250) {
-        specialItems.push(items[i]);
-    }
-
+if (answer == guessedNum) {
+    alert(`ты угадал`)
+}else{
+    alert(`попробуй еще`)
+    location.reload()
 }
 
-console.log(expensiveItems);
-console.log(cheapItems);
-console.log(specialItems);
+
+
