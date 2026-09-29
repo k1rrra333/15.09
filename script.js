@@ -258,18 +258,21 @@
 // ==============================
 
 
-let answer = +prompt(`guess number`)
+// let answer = +prompt(`guess number`)
 
-let guessedNum = Math.floor(Math.random() * 21)
+// let guessedNum = Math.floor(Math.random() * 21)
 
-console.log(guessedNum)
+// console.log(guessedNum)
 
-if (answer == guessedNum) {
-    alert(`ты угадал`)
-}else{
-    alert(`попробуй еще`)
-    location.reload()
-}
+// if (answer == guessedNum) {
+//     alert(`ты угадал`)
+// }else{
+//     alert(`попробуй еще`)
+//     location.reload()
+// }
 
+
+
+// ==========================================
 
 
