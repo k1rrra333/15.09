@@ -276,3 +276,63 @@
 // ==========================================
 
 
+
+function startGame() {
+
+    let playerName = prompt("введите имя")
+    let score = 0
+    let currentLevel = 1
+    let attempts = 0
+    let isWinner = false
+
+}
+
+function level1() {
+
+    for (let i = 1; i <= 5; i++) {
+
+        let num1 = Math.floor(Math.random() * 10)
+        let num2 = Math.floor(Math.random() * 10)
+
+        let answer = +prompt(`решите уранения ${num1} + ${num2} `)
+        attempts++
+
+        if (answer == num1 + num2) {
+            alert('правильно!')
+            score++
+        } else {
+            alert("не правильно")
+            score--
+        }
+    }
+    console.log(playerName)
+    console.log(`ваш счет : ${score}`)
+}
+function level2() {
+    const correctAnswer = "erevan"
+    let answer2 = prompt("Столица Армении?")
+    let attempts = 1;
+
+    while (attempts <= 3) {
+
+        if (answer2 == correctAnswer) {
+            alert("Правильно!")
+            break;
+        } else {
+            attempts++
+
+            if (attempts > 3) {
+                alert("Попытки закончились! Game Over!")
+                break;
+            }
+
+            answer2 = prompt("Неверно. Попробуй ещё раз: столица Армении?")
+        }
+    }
+}
+
+level2();
+
+// startGame()
+// level1()
+level2()
