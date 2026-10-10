@@ -277,62 +277,107 @@
 
 
 
-function startGame() {
+// function startGame() {
 
-    let playerName = prompt("введите имя")
-    let score = 0
-    let currentLevel = 1
-    let attempts = 0
-    let isWinner = false
+//     let playerName = prompt("введите имя")
+//     let score = 0
+//     let currentLevel = 1
+//     let attempts = 0
+//     let isWinner = false
 
-}
+// }
 
-function level1() {
+// function level1() {
 
-    for (let i = 1; i <= 5; i++) {
+//     for (let i = 1; i <= 5; i++) {
 
-        let num1 = Math.floor(Math.random() * 10)
-        let num2 = Math.floor(Math.random() * 10)
+//         let num1 = Math.floor(Math.random() * 10)
+//         let num2 = Math.floor(Math.random() * 10)
 
-        let answer = +prompt(`решите уранения ${num1} + ${num2} `)
-        attempts++
+//         let answer = +prompt(`решите уранения ${num1} + ${num2} `)
+//         attempts++
 
-        if (answer == num1 + num2) {
-            alert('правильно!')
-            score++
-        } else {
-            alert("не правильно")
-            score--
-        }
-    }
-    console.log(playerName)
-    console.log(`ваш счет : ${score}`)
-}
-function level2() {
-    const correctAnswer = "erevan"
-    let answer2 = prompt("Столица Армении?")
-    let attempts = 1;
+//         if (answer == num1 + num2) {
+//             alert('правильно!')
+//             score++
+//         } else {
+//             alert("не правильно")
+//             score--
+//         }
+//     }
+//     console.log(playerName)
+//     console.log(`ваш счет : ${score}`)
+// }
+// function level2() {
+//     const correctAnswer = "erevan"
+//     let answer2 = prompt("Столица Армении?")
+//     let attempts = 1;
 
-    while (attempts <= 3) {
+//     while (attempts <= 3) {
 
-        if (answer2 == correctAnswer) {
-            alert("Правильно!")
-            break;
-        } else {
-            attempts++
+//         if (answer2 == correctAnswer) {
+//             alert("Правильно!")
+//             break;
+//         } else {
+//             attempts++
 
-            if (attempts > 3) {
-                alert("Попытки закончились! Game Over!")
-                break;
-            }
+//             if (attempts > 3) {
+//                 alert("Попытки закончились! Game Over!")
+//                 break;
+//             }
 
-            answer2 = prompt("Неверно. Попробуй ещё раз: столица Армении?")
-        }
-    }
-}
+//             answer2 = prompt("Неверно. Попробуй ещё раз: столица Армении?")
+//         }
+//     }
+// }
 
-level2();
+// level2();
 
-// startGame()
-// level1()
-level2()
+// // startGame()
+// // level1()
+// level2()
+
+
+
+
+// ======================================================
+
+
+
+
+let inventory = ["sword", "potion", "shield", "bow", "key"]
+
+inventory.push("map", "magic ring")
+console.log(inventory)
+console.log("==============")
+
+inventory.pop()
+console.log(inventory)
+console.log("==============")
+
+
+inventory.shift()
+console.log(inventory)
+console.log("==============")
+
+
+inventory.unshift("magic ring")
+console.log(inventory)
+console.log("==============")
+
+console.log(
+    inventory.includes("potion")
+)
+console.log("==============")
+
+console.log(
+    inventory.indexOf("shield")
+)
+console.log("==============")
+
+console.log(
+    inventory.slice(1,4)
+)
+console.log("==============")
+
+
